@@ -29,9 +29,7 @@ const postReducer = (state = initialState, action: PostsActions) => {
         error: action.payload.error
       };
     default:
-      return {
-        ...state
-      };
+      return state;
   }
 };
 

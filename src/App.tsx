@@ -20,9 +20,9 @@ const App = () => {
       ) : error ? (
         <div>Error</div>
       ) : (
-        posts?.map((todo, index) => (
+        posts.map((todo, index) => (
           <div key={todo.id}>
-            {++index}. {todo.title}
+            {index + 1}. {todo.title}
           </div>
         ))
       )}
